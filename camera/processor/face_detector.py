@@ -41,7 +41,7 @@ class FaceDetector(object):
         num = 0
         for (x,y,w,h) in faces:
             cv2.rectangle(frame,(x,y),(x+w,y+h),(255,255,0),2)
-            num++
+            num = num + 1
         #スケールの書き込み関数
         def make_scale(im,length=40,from_edge = 15,thick = 2,hight = 6, font_size = 0.6,pix_size = 10):
 
