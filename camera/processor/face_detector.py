@@ -45,8 +45,8 @@ class FaceDetector(object):
         #スケールの書き込み関数
         def make_scale(im,length=40,from_edge = 15,thick = 2,hight = 6, font_size = 0.6,pix_size = 10):
 
-        w = im.shape[0]
-        h = im.shape[1]
+        w = 200
+        h = 200
             #横線
         cv2.line(im,(w-length-from_edge,h-from_edge),(w-from_edge,h-from_edge),(255,255,0),thick)
         #縦線左
